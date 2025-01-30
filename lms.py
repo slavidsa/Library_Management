@@ -1,8 +1,8 @@
 import pymysql
 
-# Connect to MySQL Server (without specifying a database)
+# Connect to MySQL Server
 try:
-    con = pymysql.connect(host="localhost", user="root", password="Slavi_123")
+    con = pymysql.connect(host="localhost", user="root", password="your_password")
     cursor = con.cursor()
 
     # Create database if not exists
