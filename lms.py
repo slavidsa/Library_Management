@@ -60,7 +60,7 @@ def return_book():
     cursor.execute("UPDATE books SET available = TRUE WHERE id = %s AND available = FALSE", (book_id,))
     if cursor.rowcount > 0:
         con.commit()
-        print("Book returned successfully!")
+        print("Book is returned successfully!")
     else:
         print("Invalid Book ID or book wasn't borrowed.")
 
