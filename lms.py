@@ -52,7 +52,7 @@ def borrow_book():
         con.commit()
         print("Book borrowed successfully!")
     else:
-        print("Book is not available!")
+        print("This Book is not available!")
 
 # Function to return a book
 def return_book():
